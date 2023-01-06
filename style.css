@@ -17,8 +17,6 @@ html {
   }
   
   .pricing-card {
-   /* width: 600px;
-    height: 400px;*/
     box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
     border-radius: 5px;  
     overflow: hidden;
@@ -48,10 +46,13 @@ html {
   }
   
   .bottom-section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 55%;
     background-color: #2ab2af;
     color: #e5eff5; 
+    
   }
   
   .bottom-section h3 {
@@ -59,11 +60,9 @@ html {
   }
   
   .bottom-left-section {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
     height: 100%;  
     padding: 25px;
+    flex-basis: 50%;
   }
   
   #cost {
@@ -104,12 +103,10 @@ html {
   }
   
   .bottom-right-section {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
     height: 100%;
     padding: 25px;
     background-color: #2EBFBD;
+    flex-basis: 50%;
   }
   
   ul {
@@ -126,6 +123,8 @@ html {
     height: 400px;
   }
   
-  .bottom-left-section, .bottom-right-section {
-    width: 50%;
+  .bottom-section {
+    flex-direction: row;
+  }
+  
 }
